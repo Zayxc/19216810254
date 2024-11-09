@@ -1,4 +1,12 @@
 #!/bin/bash
+if [ "${EUID}" -ne 0 ]; then
+		echo "You need to run this script as root"
+		exit 0
+fi
+if [ "$(systemd-detect-virt)" == "openvz" ]; then
+		echo "OpenVZ is not supported"
+		exit 0
+fi
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -31,13 +39,20 @@ akbarvpnnnnnnnnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/websocket
 # Link Hosting Kalian Untuk Ohp
 akbarvpnnnnnnnnnn="raw.githubusercontent.com/senowahyu62/scriptvps/main/ohp"
 
+# Getting
+#MYIP=$(wget -qO- ipinfo.io/ip);
+#echo "Checking VPS"
+#IZIN=$(wget -qO- ipinfo.io/ip);
 
 rm -f setup.sh
 clear
 if [ -f "/etc/xray/domain" ]; then
 echo "Script Already Installed"
 exit 0
-
+fi
+mkdir /var/lib/akbarstorevpn;
+#echo "IP=" >> /var/lib/akbarstorevpn/ipvps.conf
+wget https://${akbarvpn}/cf.sh && chmod +x cf.sh && ./cf.sh
 #install v2ray
 wget https://${akbarvpnnnnnn}/ins-xray.sh && chmod +x ins-xray.sh && screen -S xray ./ins-xray.sh
 #install ssh ovpn

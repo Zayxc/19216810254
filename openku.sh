@@ -162,7 +162,7 @@ END
 
 
 #OpenVPN
-wget https://${akbarvpn}/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.github.com/Zayxc/19216810254/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -215,23 +215,23 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O addhost "https://${akbarvpn}/addhost.sh"
-wget -O about "https://${akbarvpn}/about.sh"
+wget -O addhost "https://raw.github.com/Zayxc/19216810254/main/addhost.sh"
+wget -O about "https://raw.github.com/Zayxc/19216810254/main/about.sh"
 wget -O menu "https://raw.github.com/Zayxc/19216810254/main/openmenu.sh"
-wget -O addssh "https://${akbarvpn}/addssh.sh"
-wget -O trialssh "https://${akbarvpn}/trialssh.sh"
-wget -O delssh "https://${akbarvpn}/delssh.sh"
-wget -O member "https://${akbarvpn}/member.sh"
-wget -O delexp "https://${akbarvpn}/delexp.sh"
-wget -O cekssh "https://${akbarvpn}/cekssh.sh"
-wget -O restart "https://${akbarvpn}/restart.sh"
-wget -O renewssh "https://${akbarvpn}/renewssh.sh"
-wget -O autokill "https://${akbarvpn}/autokill.sh"
-wget -O ceklim "https://${akbarvpn}/ceklim.sh"
-wget -O tendang "https://${akbarvpn}/tendang.sh"
-wget -O clearlog "https://${akbarvpn}/clearlog.sh"
-wget -O changeport "https://${akbarvpn}/changeport.sh"
-wget -O portovpn "https://${akbarvpn}/portovpn.sh"
+wget -O addssh "https://raw.github.com/Zayxc/19216810254/main/addssh.sh"
+wget -O trialssh "https://raw.github.com/Zayxc/19216810254/main/trialssh.sh"
+wget -O delssh "https://raw.github.com/Zayxc/19216810254/main/delssh.sh"
+wget -O member "https://raw.github.com/Zayxc/19216810254/main/member.sh"
+wget -O delexp "https://raw.github.com/Zayxc/19216810254/main/delexp.sh"
+wget -O cekssh "https://raw.github.com/Zayxc/19216810254/main/cekssh.sh"
+wget -O restart "https://raw.github.com/Zayxc/19216810254/main/restart.sh"
+wget -O renewssh "https://raw.github.com/Zayxc/19216810254/main/renewssh.sh"
+wget -O autokill "https://raw.github.com/Zayxc/19216810254/main/autokill.sh"
+wget -O ceklim "https://raw.github.com/Zayxc/19216810254/main/ceklim.sh"
+wget -O tendang "https://raw.github.com/Zayxc/19216810254/main/tendang.sh"
+wget -O clearlog "https://raw.github.com/Zayxc/19216810254/main/clearlog.sh"
+wget -O changeport "https://raw.github.com/Zayxc/19216810254/main/changeport.sh"
+wget -O portovpn "https://raw.github.com/Zayxc/19216810254/main/portovpn.sh"
 
 wget -O sshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/menuvpn.sh"
 

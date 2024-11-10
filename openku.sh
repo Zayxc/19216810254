@@ -162,7 +162,7 @@ END
 
 
 #OpenVPN
-wget https://raw.github.com/Zayxc/19216810254/main/vpn.sh &&  chmod +x vpn.sh && ./vpn.sh
+wget https://raw.github.com/Zayxc/19216810254/main/zvpn.sh &&  chmod +x zvpn.sh && ./zvpn.sh
 
 # install fail2ban
 apt -y install fail2ban
@@ -215,17 +215,17 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O zmenu "https://raw.github.com/Zayxc/19216810254/main/openmenu.sh"
-wget -O zsshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/menuvpn.sh"
-wget -O zaddssh "https://raw.github.com/Zayxc/19216810254/main/addssh.sh"
-wget -O ztrialssh "https://raw.github.com/Zayxc/19216810254/main/trialssh.sh"
-wget -O zdelssh "https://raw.github.com/Zayxc/19216810254/main/delssh.sh"
-wget -O zmember "https://raw.github.com/Zayxc/19216810254/main/member.sh"
-wget -O zdelexp "https://raw.github.com/Zayxc/19216810254/main/delexp.sh"
-wget -O zcekssh "https://raw.github.com/Zayxc/19216810254/main/cekssh.sh"
-wget -O zrenewssh "https://raw.github.com/Zayxc/19216810254/main/renewssh.sh"
-wget -O zautokill "https://raw.github.com/Zayxc/19216810254/main/autokill.sh"
-wget -O zclearlog "https://raw.github.com/Zayxc/19216810254/main/clearlog.sh"
+wget -O zmenu "https://raw.github.com/Zayxc/19216810254/main/zopenmenu.sh"
+wget -O zsshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/zmenuvpn.sh"
+wget -O zaddssh "https://raw.github.com/Zayxc/19216810254/main/zaddssh.sh"
+wget -O ztrialssh "https://raw.github.com/Zayxc/19216810254/main/ztrialssh.sh"
+wget -O zdelssh "https://raw.github.com/Zayxc/19216810254/main/zdelssh.sh"
+wget -O zmember "https://raw.github.com/Zayxc/19216810254/main/zmember.sh"
+wget -O zdelexp "https://raw.github.com/Zayxc/19216810254/main/zdelexp.sh"
+wget -O zcekssh "https://raw.github.com/Zayxc/19216810254/main/zcekssh.sh"
+wget -O zrenewssh "https://raw.github.com/Zayxc/19216810254/main/zrenewssh.sh"
+wget -O zautokill "https://raw.github.com/Zayxc/19216810254/main/zautokill.sh"
+wget -O zclearlog "https://raw.github.com/Zayxc/19216810254/main/zclearlog.sh"
 
 chmod +x zmenu
 chmod +x zsshovpnmenu

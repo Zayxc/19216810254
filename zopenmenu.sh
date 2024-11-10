@@ -11,10 +11,10 @@ echo -e "$yy 1$y.  OpenVPN MENU  $wh"
 echo -e "$yy 13$y. Exit$wh"
 echo -e "$y-------------------------------------------------$wh"
 read -p "Select From Options [ 1 - 13 ] : " menu
-case $menu in
+case $zmenu in
 1)
 clear
-sshovpnmenu
+zsshovpnmenu
 ;;
 13)
 clear
@@ -22,6 +22,6 @@ exit
 ;;
 *)
 clear
-menu
+zmenu
 ;;
 esac

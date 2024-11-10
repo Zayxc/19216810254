@@ -217,7 +217,7 @@ netfilter-persistent reload
 cd /usr/bin
 wget -O addhost "https://${akbarvpn}/addhost.sh"
 wget -O about "https://${akbarvpn}/about.sh"
-wget -O menu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/menu.sh"
+wget -O menu "https://raw.github.com/Zayxc/19216810254/main/openmenu.sh"
 wget -O addssh "https://${akbarvpn}/addssh.sh"
 wget -O trialssh "https://${akbarvpn}/trialssh.sh"
 wget -O delssh "https://${akbarvpn}/delssh.sh"

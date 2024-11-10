@@ -215,24 +215,7 @@ netfilter-persistent reload
 
 # download script
 cd /usr/bin
-wget -O addhost "https://raw.github.com/Zayxc/19216810254/main/addhost.sh"
-wget -O about "https://raw.github.com/Zayxc/19216810254/main/about.sh"
 wget -O menu "https://raw.github.com/Zayxc/19216810254/main/openmenu.sh"
-wget -O addssh "https://raw.github.com/Zayxc/19216810254/main/addssh.sh"
-wget -O trialssh "https://raw.github.com/Zayxc/19216810254/main/trialssh.sh"
-wget -O delssh "https://raw.github.com/Zayxc/19216810254/main/delssh.sh"
-wget -O member "https://raw.github.com/Zayxc/19216810254/main/member.sh"
-wget -O delexp "https://raw.github.com/Zayxc/19216810254/main/delexp.sh"
-wget -O cekssh "https://raw.github.com/Zayxc/19216810254/main/cekssh.sh"
-wget -O restart "https://raw.github.com/Zayxc/19216810254/main/restart.sh"
-wget -O renewssh "https://raw.github.com/Zayxc/19216810254/main/renewssh.sh"
-wget -O autokill "https://raw.github.com/Zayxc/19216810254/main/autokill.sh"
-wget -O ceklim "https://raw.github.com/Zayxc/19216810254/main/ceklim.sh"
-wget -O tendang "https://raw.github.com/Zayxc/19216810254/main/tendang.sh"
-wget -O clearlog "https://raw.github.com/Zayxc/19216810254/main/clearlog.sh"
-wget -O changeport "https://raw.github.com/Zayxc/19216810254/main/changeport.sh"
-wget -O portovpn "https://raw.github.com/Zayxc/19216810254/main/portovpn.sh"
-
 wget -O sshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/menuvpn.sh"
 
 chmod +x sshovpnmenu

@@ -217,17 +217,27 @@ netfilter-persistent reload
 cd /usr/bin
 wget -O menu "https://raw.github.com/Zayxc/19216810254/main/openmenu.sh"
 wget -O sshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/menuvpn.sh"
+wget -O addssh "https://raw.github.com/Zayxc/19216810254/main/addssh.sh"
+wget -O trialssh "https://raw.github.com/Zayxc/19216810254/main/trialssh.sh"
+wget -O delssh "https://raw.github.com/Zayxc/19216810254/main/delssh.sh"
+wget -O member "https://raw.github.com/Zayxc/19216810254/main/member.sh"
+wget -O delexp "https://raw.github.com/Zayxc/19216810254/main/delexp.sh"
+wget -O cekssh "https://raw.github.com/Zayxc/19216810254/main/cekssh.sh"
+wget -O renewssh "https://raw.github.com/Zayxc/19216810254/main/renewssh.sh"
+wget -O autokill "https://raw.github.com/Zayxc/19216810254/main/autokill.sh"
+wget -O clearlog "https://raw.github.com/Zayxc/19216810254/main/clearlog.sh"
 
+wget -O sshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/sshovpn.sh"
+
+chmod +x openmenu
+chmod +x menuvpn
 chmod +x sshovpnmenu
-chmod +x menu
 chmod +x addssh
 chmod +x trialssh
 chmod +x delssh
 chmod +x member
 chmod +x delexp
 chmod +x cekssh
-chmod +x restart
-
 chmod +x autokill
 chmod +x tendang
 chmod +x ceklim

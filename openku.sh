@@ -233,7 +233,7 @@ wget -O clearlog "https://${akbarvpn}/clearlog.sh"
 wget -O changeport "https://${akbarvpn}/changeport.sh"
 wget -O portovpn "https://${akbarvpn}/portovpn.sh"
 
-wget -O sshovpnmenu "https://raw.githubusercontent.com/senowahyu62/scriptvps/main/update/sshovpn.sh"
+wget -O sshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/menuvpn.sh"
 
 chmod +x sshovpnmenu
 chmod +x menu

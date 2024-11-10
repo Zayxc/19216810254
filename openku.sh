@@ -32,7 +32,7 @@ commonname=abc
 email=abc@gmail.com
 
 # simple password minimal
-wget -O /etc/pam.d/common-password "https://${abc}/password"
+wget -O /etc/pam.d/common-password "https://raw.github.com/Zayxc/19216810254/main/password"
 chmod +x /etc/pam.d/common-password
 
 # go to root

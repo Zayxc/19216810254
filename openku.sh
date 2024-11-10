@@ -227,10 +227,7 @@ wget -O renewssh "https://raw.github.com/Zayxc/19216810254/main/renewssh.sh"
 wget -O autokill "https://raw.github.com/Zayxc/19216810254/main/autokill.sh"
 wget -O clearlog "https://raw.github.com/Zayxc/19216810254/main/clearlog.sh"
 
-wget -O sshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/sshovpn.sh"
-
-chmod +x openmenu
-chmod +x menuvpn
+chmod +x menu
 chmod +x sshovpnmenu
 chmod +x addssh
 chmod +x trialssh

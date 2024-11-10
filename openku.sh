@@ -236,12 +236,8 @@ chmod +x member
 chmod +x delexp
 chmod +x cekssh
 chmod +x autokill
-chmod +x tendang
-chmod +x ceklim
-
+chmod +x renewssh
 chmod +x clearlog
-chmod +x changeport
-chmod +x portovpn
 
 echo "0 5 * * * root clearlog && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab

@@ -20,41 +20,41 @@ echo -e "$yy 10$y. Restart All Service"
 echo -e "$yy 11$y. Menu Utama"
 echo -e "$yy 12$y. Exit"
 echo -e "$y-------------------------------------------------------------$wh"
-read -p "Select From Options [ 1 - 12 ] : " menu
+read -p "Select From Options [ 1 - 12 ] : " zmenu
 echo -e ""
-case $menu in
+case $zmenu in
 1)
-addssh
+zaddssh
 ;;
 2)
-trialssh
+ztrialssh
 ;;
 3)
-renewssh
+zrenewssh
 ;;
 4)
-cekssh
+zcekssh
 ;;
 5)
-member
+zmember
 ;;
 6)
-delssh
+zdelssh
 ;;
 7)
-delexp
+zdelexp
 ;;
 8)
-autokill
+zautokill
 ;;
 9)
-ceklim
+zceklim
 ;;
 10)
 restart
 ;;
 11)
-menu
+zmenu
 ;;
 12)
 clear
@@ -62,6 +62,6 @@ exit
 ;;
 *)
 clear
-menu
+zmenu
 ;;
 esac

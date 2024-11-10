@@ -74,6 +74,6 @@ echo "----------------------------------------------";
         cat /tmp/vpn-login-udp.txt
 fi
 echo "----------------------------------------------";
-echo "Script By Akbar Maulana"
+echo "Done"
 echo "";
 

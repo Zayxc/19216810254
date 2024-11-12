@@ -34,3 +34,9 @@ JUMLAH="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)
 echo "---------------------------------------------------"
 echo "Account number: $JUMLAH user"
 echo "---------------------------------------------------"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo "";
+
+read -n 1 -s -r -p "Press any key to back on menu"
+
+zmenu

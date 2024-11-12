@@ -223,6 +223,7 @@ wget -O zdelssh "https://raw.github.com/Zayxc/19216810254/main/zdelssh.sh"
 wget -O zmember "https://raw.github.com/Zayxc/19216810254/main/zmember.sh"
 wget -O zdelexp "https://raw.github.com/Zayxc/19216810254/main/zdelexp.sh"
 wget -O zcekssh "https://raw.github.com/Zayxc/19216810254/main/zcekssh.sh"
+wget -O zcekssh "https://raw.github.com/Zayxc/19216810254/main/zceklim.sh"
 wget -O zrenewssh "https://raw.github.com/Zayxc/19216810254/main/zrenewssh.sh"
 wget -O zautokill "https://raw.github.com/Zayxc/19216810254/main/zautokill.sh"
 wget -O zclearlog "https://raw.github.com/Zayxc/19216810254/main/zclearlog.sh"
@@ -235,6 +236,7 @@ chmod +x zdelssh
 chmod +x zmember
 chmod +x zdelexp
 chmod +x zcekssh
+chmod +x zceklim
 chmod +x zautokill
 chmod +x zrenewssh
 chmod +x zclearlog

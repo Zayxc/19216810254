@@ -49,3 +49,9 @@ echo -e "=============================="
 echo -e "GET / HTTP/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "=============================="
 echo -e "Done"
+echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo "";
+
+read -n 1 -s -r -p "Press any key to back on menu"
+
+zmenu

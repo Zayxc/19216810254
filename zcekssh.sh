@@ -24,7 +24,10 @@ if [ -e "/var/log/secure" ]; then
 fi
                 
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
-echo "----------=[ Dropbear User Login ]=-----------";
+        echo " "
+        echo -e "\033[0;34mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\033[0m"
+        echo -e "\E[0;41;36m          SSH User Login         \E[0m"
+        echo -e "\033[0;34mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\033[0m"
 echo "ID  |  Username  |  IP Address";
 echo "----------------------------------------------";
 cat $LOG | grep -i dropbear | grep -i "Password auth succeeded" > /tmp/login-db.txt;
@@ -38,8 +41,30 @@ do
                 echo "$PID - $USER - $IP";
                 fi
 done
+if [ -f "/etc/openvpn/server/openvpn-tcp.log" ]; then
+        echo " "
+        echo -e "\033[0;34mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\033[0m"
+        echo -e "\E[0;41;36m          OpenVPN TCP User Login         \E[0m"
+        echo -e "\033[0;34mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\033[0m"
+        echo "Username  |  IP Address  |  Connected Since";
+        echo -e "\033[0;34mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\033[0m"
+        cat /etc/openvpn/server/openvpn-tcp.log | grep -w "^CLIENT_LIST" | cut -d ',' -f 2,3,8 | sed -e 's/,/      /g' > /tmp/vpn-login-tcp.txt
+        cat /tmp/vpn-login-tcp.txt
+fi
+echo -e "\033[0;34mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\033[0m"
+
+if [ -f "/etc/openvpn/server/openvpn-udp.log" ]; then
+        echo " "
+        echo -e "\033[0;34mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\033[0m"
+        echo -e "\E[0;41;36m          OpenVPN UDP User Login         \E[0m"
+        echo -e "\033[0;34mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\033[0m"
+        echo "Username  |  IP Address  |  Connected Since";
+        echo -e "\033[0;34mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\033[0m"
+        cat /etc/openvpn/server/openvpn-udp.log | grep -w "^CLIENT_LIST" | cut -d ',' -f 2,3,8 | sed -e 's/,/      /g' > /tmp/vpn-login-udp.txt
+        cat /tmp/vpn-login-udp.txt
+fi
 echo " "
-echo "----------=[ OpenSSH User Login ]=------------";
+echo "----------=[ DROPBEAR User Login ]=------------";
 echo "ID  |  Username  |  IP Address";
 echo "----------------------------------------------";
 cat $LOG | grep -i sshd | grep -i "Accepted password for" > /tmp/login-db.txt
@@ -55,25 +80,11 @@ do
                 echo "$PID - $USER - $IP";
         fi
 done
-if [ -f "/etc/openvpn/server/openvpn-tcp.log" ]; then
-echo ""
-echo "---------=[ OpenVPN TCP User Login ]=---------";
-echo "Username  |  IP Address  |  Connected";
-echo "----------------------------------------------";
-        cat /etc/openvpn/server/openvpn-tcp.log | grep -w "^CLIENT_LIST" | cut -d ',' -f 2,3,8 | sed -e 's/,/      /g' > /tmp/vpn-login-tcp.txt
-        cat /tmp/vpn-login-tcp.txt
-fi
-echo "----------------------------------------------";
 
-if [ -f "/etc/openvpn/server/openvpn-udp.log" ]; then
-echo " "
-echo "---------=[ OpenVPN UDP User Login ]=---------";
-echo "Username  |  IP Address  |  Connected";
-echo "----------------------------------------------";
-        cat /etc/openvpn/server/openvpn-udp.log | grep -w "^CLIENT_LIST" | cut -d ',' -f 2,3,8 | sed -e 's/,/      /g' > /tmp/vpn-login-udp.txt
-        cat /tmp/vpn-login-udp.txt
-fi
-echo "----------------------------------------------";
-echo "Done"
+echo -e "\033[0;34mâ”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”\033[0m"
 echo "";
+
+read -n 1 -s -r -p "Press any key to back on menu"
+
+zmenu
 

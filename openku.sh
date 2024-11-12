@@ -212,7 +212,7 @@ netfilter-persistent save
 netfilter-persistent reload
 
 # download script
-cd /root
+cd /usr/bin
 wget -O zmenu "https://raw.github.com/Zayxc/19216810254/main/zopenmenu.sh"
 wget -O zsshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/zmenuvpn.sh"
 wget -O zaddssh "https://raw.github.com/Zayxc/19216810254/main/zaddssh.sh"

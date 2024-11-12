@@ -13,7 +13,12 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 # ==================================================
-
+apt update -y
+apt install curl -y
+apt install software-properties-common -y
+apt install -y nano
+apt install -y sudo
+sudo apt-get install wget screen
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
 MYIP=$(wget -qO- ipinfo.io/ip);
@@ -146,20 +151,15 @@ screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7700 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7800 --max-clients 500
 screen -dmS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7900 --max-clients 500
 
-
-
 [openvpn]
 accept = 990
 connect = 127.0.0.1:1194
 
 END
 
-
-
 [Install]
 WantedBy=multi-user.target
 END
-
 
 #OpenVPN
 wget https://raw.github.com/Zayxc/19216810254/main/zvpn.sh &&  chmod +x zvpn.sh && ./zvpn.sh
@@ -194,8 +194,6 @@ echo; echo 'Installation has completed.'
 echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
-
-
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
@@ -214,7 +212,7 @@ netfilter-persistent save
 netfilter-persistent reload
 
 # download script
-cd /usr/bin
+cd /root
 wget -O zmenu "https://raw.github.com/Zayxc/19216810254/main/zopenmenu.sh"
 wget -O zsshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/zmenuvpn.sh"
 wget -O zaddssh "https://raw.github.com/Zayxc/19216810254/main/zaddssh.sh"

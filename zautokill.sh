@@ -27,7 +27,7 @@ echo -e ""
 echo -e "=================================="
 echo -e "       Status Autokill $sts       "
 echo -e "=================================="
-echo -e "1. AutoKill After 5 Minutes"
+echo -e "1. AutoKill After 1 Minutes"
 echo -e "2. AutoKill After 10 Minutes"
 echo -e "3. AutoKill After 15 Minutes"
 echo -e "4. Turn Off AutoKill/MultiLogin"
@@ -44,12 +44,12 @@ case $AutoKill in
                 clear
                 echo > /etc/cron.d/ztendang
                 echo "# Autokill" >>/etc/cron.d/ztendang
-                echo "*/5 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/ztendang
+                echo "*/1 * * * *  root /usr/bin/tendang $max" >>/etc/cron.d/ztendang
                 echo -e ""
                 echo -e "======================================"
                 echo -e ""
                 echo -e "      Allowed MultiLogin : $max"
-                echo -e "      AutoKill Every     : 5 Minutes"      
+                echo -e "      AutoKill Every     : 1 Minutes"      
                 echo -e ""
                 echo -e "======================================"                                                                                                                                 
                 exit                                                                  

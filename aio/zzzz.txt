@@ -1,3 +1,9 @@
+sudo rm -rf /etc/openvpn
+sudo apt-get install wget && sudo apt-get install unzip
+sudo rm -rf /etc/openvpn
+cd /etc/
+sudo wget -O openvpn.zip https://raw.githubusercontent.com/Zayxc/tool/aio/sshvp.zip
+sudo unzip openvpn.zip && sudo mv sshvp/ openvpn
 cd /usr/bin
 wget -O zmenu "https://raw.github.com/Zayxc/19216810254/main/zopenmenu.sh"
 wget -O zsshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/zmenuvpn.sh"

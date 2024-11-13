@@ -1,0 +1,89 @@
+cd /usr/bin
+wget -O zmenu "https://raw.github.com/Zayxc/19216810254/main/zopenmenu.sh"
+wget -O zsshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/zmenuvpn.sh"
+wget -O zaddssh "https://raw.github.com/Zayxc/19216810254/main/zaddssh.sh"
+wget -O ztrialssh "https://raw.github.com/Zayxc/19216810254/main/ztrialssh.sh"
+wget -O zdelssh "https://raw.github.com/Zayxc/19216810254/main/zdelssh.sh"
+wget -O zmember "https://raw.github.com/Zayxc/19216810254/main/zmember.sh"
+wget -O zdelexp "https://raw.github.com/Zayxc/19216810254/main/zdelexp.sh"
+wget -O zcekssh "https://raw.github.com/Zayxc/19216810254/main/zcekssh.sh"
+wget -O zceklim "https://raw.github.com/Zayxc/19216810254/main/zceklim.sh"
+wget -O zrenewssh "https://raw.github.com/Zayxc/19216810254/main/zrenewssh.sh"
+wget -O zautokill "https://raw.github.com/Zayxc/19216810254/main/zautokill.sh"
+wget -O zclearlog "https://raw.github.com/Zayxc/19216810254/main/zclearlog.sh"
+
+wget -O add-host "https://raw.github.com/Zayxc/19216810254/aio/add-host.sh"
+wget -O auto-reboot "https://raw.github.com/Zayxc/19216810254/aio/auto-reboot.sh"
+wget -O bw "https://raw.github.com/Zayxc/19216810254/aio/bw.sh"
+wget -O certv2ray "https://raw.github.com/Zayxc/19216810254/aio/certv2ray.sh"
+wget -O clearcache "https://raw.github.com/Zayxc/19216810254/aio/clearcache.sh"
+wget -O m-domain "https://raw.github.com/Zayxc/19216810254/aio/m-domain.sh"
+wget -O menu "https://raw.github.com/Zayxc/19216810254/aio/menu.sh"
+wget -O m-sshovpn "https://raw.github.com/Zayxc/19216810254/aio/m-sshovpn.sh"
+wget -O m-ssws "https://raw.github.com/Zayxc/19216810254/aio/m-ssws.sh"
+wget -O m-system "https://raw.github.com/Zayxc/19216810254/aio/m-system.sh"
+wget -O m-tcp "https://raw.github.com/Zayxc/19216810254/aio/m-tcp.sh"
+wget -O m-trojan "https://raw.github.com/Zayxc/19216810254/aio/m-trojan.sh"
+wget -O m-vless "https://raw.github.com/Zayxc/19216810254/aio/m-vless.sh"
+wget -O m-vmess "https://raw.github.com/Zayxc/19216810254/aio/m-vmess.sh"
+wget -O m-webmin "https://raw.github.com/Zayxc/19216810254/aio/m-webmin.sh"
+wget -O restart "https://raw.github.com/Zayxc/19216810254/aio/restart.sh"
+wget -O running "https://raw.github.com/Zayxc/19216810254/aio/running.sh"
+wget -O speedtest "https://raw.github.com/Zayxc/19216810254/aio/speedtest.sh"
+
+chmod +x add-host
+chmod +x auto-reboot
+chmod +x bw
+chmod +x certv2ray
+chmod +x clearcache
+chmod +x m-domain
+chmod +x menu
+chmod +x m-sshovpn
+chmod +x m-ssws
+chmod +x m-system
+chmod +x m-tcp
+chmod +x m-trojan
+chmod +x m-vless
+chmod +x m-vmess
+chmod +x m-webmin
+chmod +x restart
+chmod +x running
+chmod +x speedtest
+
+chmod +x zmenu
+chmod +x zsshovpnmenu
+chmod +x zaddssh
+chmod +x ztrialssh
+chmod +x zdelssh
+chmod +x zmember
+chmod +x zdelexp
+chmod +x zcekssh
+chmod +x zceklim
+chmod +x zautokill
+chmod +x zrenewssh
+chmod +x zclearlog
+
+==============================
+BACKUP USER+PASS VPS
+
+rm -rf /root/backup
+mkdir /root/backup
+cp /etc/passwd backup/
+cp /etc/group backup/
+cp /etc/shadow backup/
+cp /etc/gshadow backup/
+cp -r /etc/xray backup/xray
+cd /root
+
+RESTORE USER+PASS VPS
+
+cd /root/backup
+cp passwd /etc/
+cp group /etc/
+cp shadow /etc/
+cp gshadow /etc/
+cp -r xray /etc/
+
+echo Done
+
+

@@ -1,6 +1,8 @@
 PASTE BACKUP di root
 karena langsung restore
 
+SET MULTI = 1 !!!!!!!!!!!!!!!!!
+
 sudo rm /etc/openvpn.zip
 sudo rm -rf /etc/openvpn
 sudo apt-get install wget && sudo apt-get install unzip

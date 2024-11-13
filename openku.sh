@@ -212,32 +212,32 @@ netfilter-persistent save
 netfilter-persistent reload
 
 # download script
-cd /usr/bin
-wget -O zmenu "https://raw.github.com/Zayxc/19216810254/main/zopenmenu.sh"
-wget -O zsshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/zmenuvpn.sh"
-wget -O zaddssh "https://raw.github.com/Zayxc/19216810254/main/zaddssh.sh"
-wget -O ztrialssh "https://raw.github.com/Zayxc/19216810254/main/ztrialssh.sh"
-wget -O zdelssh "https://raw.github.com/Zayxc/19216810254/main/zdelssh.sh"
-wget -O zmember "https://raw.github.com/Zayxc/19216810254/main/zmember.sh"
-wget -O zdelexp "https://raw.github.com/Zayxc/19216810254/main/zdelexp.sh"
-wget -O zcekssh "https://raw.github.com/Zayxc/19216810254/main/zcekssh.sh"
-wget -O zceklim "https://raw.github.com/Zayxc/19216810254/main/zceklim.sh"
-wget -O zrenewssh "https://raw.github.com/Zayxc/19216810254/main/zrenewssh.sh"
-wget -O zautokill "https://raw.github.com/Zayxc/19216810254/main/zautokill.sh"
-wget -O zclearlog "https://raw.github.com/Zayxc/19216810254/main/zclearlog.sh"
+#cd /usr/bin
+#wget -O zmenu "https://raw.github.com/Zayxc/19216810254/main/zopenmenu.sh"
+#wget -O zsshovpnmenu "https://raw.github.com/Zayxc/19216810254/main/zmenuvpn.sh"
+#wget -O zaddssh "https://raw.github.com/Zayxc/19216810254/main/zaddssh.sh"
+#wget -O ztrialssh "https://raw.github.com/Zayxc/19216810254/main/ztrialssh.sh"
+#wget -O zdelssh "https://raw.github.com/Zayxc/19216810254/main/zdelssh.sh"
+#wget -O zmember "https://raw.github.com/Zayxc/19216810254/main/zmember.sh"
+#wget -O zdelexp "https://raw.github.com/Zayxc/19216810254/main/zdelexp.sh"
+#wget -O zcekssh "https://raw.github.com/Zayxc/19216810254/main/zcekssh.sh"
+#wget -O zceklim "https://raw.github.com/Zayxc/19216810254/main/zceklim.sh"
+#wget -O zrenewssh "https://raw.github.com/Zayxc/19216810254/main/zrenewssh.sh"
+#wget -O zautokill "https://raw.github.com/Zayxc/19216810254/main/zautokill.sh"
+#wget -O zclearlog "https://raw.github.com/Zayxc/19216810254/main/zclearlog.sh"
 
-chmod +x zmenu
-chmod +x zsshovpnmenu
-chmod +x zaddssh
-chmod +x ztrialssh
-chmod +x zdelssh
-chmod +x zmember
-chmod +x zdelexp
-chmod +x zcekssh
-chmod +x zceklim
-chmod +x zautokill
-chmod +x zrenewssh
-chmod +x zclearlog
+#chmod +x zmenu
+#chmod +x zsshovpnmenu
+#chmod +x zaddssh
+#chmod +x ztrialssh
+#chmod +x zdelssh
+#chmod +x zmember
+#chmod +x zdelexp
+#chmod +x zcekssh
+#chmod +x zceklim
+#chmod +x zautokill
+#chmod +x zrenewssh
+#chmod +x zclearlog
 
 echo "0 5 * * * root clearlog && reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab

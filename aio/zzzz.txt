@@ -1,3 +1,6 @@
+PASTE BACKUP di root
+karena langsung restore
+
 sudo rm /etc/openvpn.zip
 sudo rm -rf /etc/openvpn
 sudo apt-get install wget && sudo apt-get install unzip
@@ -66,6 +69,13 @@ chmod +x zceklim
 chmod +x zautokill
 chmod +x zrenewssh
 chmod +x zclearlog
+cd /root/backup
+cp passwd /etc/
+cp group /etc/
+cp shadow /etc/
+cp gshadow /etc/
+cp -r xray /etc/
+
 
 ==============================
 BACKUP USER+PASS VPS

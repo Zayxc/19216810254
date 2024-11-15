@@ -132,9 +132,6 @@ END
 WantedBy=multi-user.target
 END
 
-#OpenVPN
-wget https://raw.github.com/Zayxc/19216810254/main/zvpn2.sh &&  chmod +x zvpn2.sh && ./zvpn2.sh
-
 
 # download script
 #cd /usr/bin

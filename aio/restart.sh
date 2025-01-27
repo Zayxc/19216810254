@@ -66,7 +66,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;
                 2)
@@ -83,7 +83,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;
                 3)
@@ -100,7 +100,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;
                 4)
@@ -117,7 +117,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;
                 5)
@@ -134,7 +134,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;
                 6)
@@ -151,7 +151,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;
                 7)
@@ -168,7 +168,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;
                 8)
@@ -186,7 +186,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;
                 9)
@@ -205,7 +205,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;
                 10)
@@ -226,7 +226,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;
                 11)
@@ -245,7 +245,7 @@ case $Restart in
                 echo ""
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
-                read -n 1 -s -r -p "Press any key to back on system menu"
+                read -p "Kembali ke Menu tekan Enter"
                 restart
                 ;;                                                                         
                 0)

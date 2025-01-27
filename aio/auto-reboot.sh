@@ -63,7 +63,7 @@ if [ ! -e /root/log-reboot.txt ]; then
     echo -e ""
     echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo ""
-    read -n 1 -s -r -p "Press any key to back on menu"
+    read -p "Kembali ke Menu tekan Enter"
     auto-reboot
 	else
 	clear
@@ -76,7 +76,7 @@ if [ ! -e /root/log-reboot.txt ]; then
     echo -e ""
     echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo ""
-    read -n 1 -s -r -p "Press any key to back on menu"
+    read -p "Kembali ke Menu tekan Enter"
     auto-reboot    
 fi
 elif test $x -eq 9; then
@@ -90,7 +90,7 @@ echo "Auto Reboot Log successfully deleted!"
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -p "Kembali ke Menu tekan Enter"
 auto-reboot 
 elif test $x -eq 0; then
 clear
@@ -100,6 +100,6 @@ clear
 echo ""
 echo "Options Not Found In Menu"
 echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -p "Kembali ke Menu tekan Enter"
 auto-reboot 
 fi

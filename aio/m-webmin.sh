@@ -34,7 +34,7 @@ echo " $IP:10000"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -p "Kembali ke Menu tekan Enter"
 m-webmin
 }
 function restart () {
@@ -52,7 +52,7 @@ echo -e "\033[32m[Info]\033[0m Webmin Start Successfully !"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -p "Kembali ke Menu tekan Enter"
 m-webmin
 }
 function uninstall () {
@@ -73,7 +73,7 @@ echo -e "\033[32m[Info]\033[0m Webmin Uninstall Successfully !"
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -p "Kembali ke Menu tekan Enter"
 m-webmin
 }
 if [[ "$cek" = "perl" ]]; then

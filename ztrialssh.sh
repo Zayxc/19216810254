@@ -51,6 +51,5 @@ echo -e "=============================="
 echo -e "Done"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo "";
-
 read -p "Kembali ke Menu tekan Enter"
 zmenu

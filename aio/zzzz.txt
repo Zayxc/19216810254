@@ -41,6 +41,7 @@ wget -O m-webmin "https://raw.github.com/Zayxc/19216810254/main/aio/m-webmin.sh"
 wget -O restart "https://raw.github.com/Zayxc/19216810254/main/aio/restart.sh"
 wget -O running "https://raw.github.com/Zayxc/19216810254/main/aio/running.sh"
 wget -O speedtest "https://raw.github.com/Zayxc/19216810254/main/aio/speedtest.sh"
+wget -O tendang "https://raw.github.com/Zayxc/19216810254/main/aio/tendang.sh"
 chmod +x add-host
 chmod +x auto-reboot
 chmod +x bw
@@ -59,6 +60,7 @@ chmod +x m-webmin
 chmod +x restart
 chmod +x running
 chmod +x speedtest
+chmod +x tendang
 chmod +x zmenu
 chmod +x zsshovpnmenu
 chmod +x zaddssh
@@ -101,5 +103,6 @@ cp gshadow /etc/
 cp -r xray /etc/
 
 echo Done
+
 
 
